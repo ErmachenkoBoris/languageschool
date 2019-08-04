@@ -1,0 +1,299 @@
+@theme-color: #0fa0ff;
+@focus-color: #0a5e9d;
+@shadow-color: #153e7c;
+@white-color: #ffffff;
+@error-color: #852259;
+@warning-good-color: #49ff85;
+@warning-bad-color: #a87722;
+@back-info-color: #7cc2ff;
+@back-info-light-color: #c2e5ff;
+@article-text-color: #d6d6d6;
+@black-color: black;
+
+@border-color-animation: #8e0e00;
+
+@animation-delay: 5s;
+@animation-duration: 20s;
+@animation-delay-move: 2s;
+@animation-duration-move: 10s;
+
+
+@border-width-animation: 30vh;
+@border-radius-animation: 60vh;
+@margin-animation: 15vh;
+
+.greet_page__main_container {
+  width: 100vw;
+  height: 100vh;
+
+}
+.main_container__scroll{
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 55vh;
+
+}
+
+.scroll__content{
+  position: absolute;
+  bottom: @margin-animation;
+  background: #ffc8b4;
+  width:60vh;
+  height:30vh;
+  border-style:solid;
+  border-color:  @border-color-animation;
+  border-width: 30vh 0 0 0;;
+
+  border-radius:60vh;
+  z-index: -991;
+}
+.scroll__content_second{
+  position: absolute;
+  bottom: @margin-animation;
+
+  background: #ff8d50;
+  width:60vh;
+  height:30vh;
+
+  border-style:solid;
+  border-color:@border-color-animation;
+  border-width: 30vh 0 0 0;
+
+  border-radius:60vh;
+  z-index: -992;
+}
+.scroll__content_third{
+  position: absolute;
+  bottom: @margin-animation;
+
+  background: #ff8eb9;
+  width:60vh;
+  height:30vh;
+
+  border-style:solid;
+  border-color:@border-color-animation;
+  border-width: 30vh 0 0 0;
+
+  border-radius:60vh;
+  z-index: -993;
+}
+.scroll__content_forth{
+  position: absolute;
+  bottom: @margin-animation;
+
+  background: #a88dff;
+  width:60vh;
+  height:30vh;
+
+  border-style:solid;
+  border-color:@border-color-animation;
+  border-width: 30vh 0 0 0;
+
+  border-radius:60vh;
+  z-index: -994;
+}
+.main_container__footer{
+  width: 100vw;
+  height: 45vh;
+  background: @theme-color;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__float_box_1{
+  display: flex;
+  width: 15vw;
+  height: 20vh;
+  background-color: #49ff85;
+  opacity: 0;
+}
+.footer__float_box_1:hover {
+  transform: scale(1.5);
+  transition: 3s;
+
+}
+.footer__float_box_2{
+  display: flex;
+  width: 15vw;
+  height: 20vh;
+  background-color: #49ff85;
+}
+.footer__float_box_3{
+  display: flex;
+  width: 15vw;
+  height: 20vh;
+  background-color: #49ff85;
+}
+.footer__float_box_4{
+  display: flex;
+  width: 15vw;
+  height: 20vh;
+  background-color: #49ff85;
+}
+.move {
+
+  animation-name: move_animate;
+  animation-duration: @animation-duration-move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.move_2 {
+
+  animation-name: move_animate;
+  animation-duration: @animation-duration-move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: @animation-delay-move;
+}
+.move_3 {
+
+  animation-name: move_animate;
+  animation-duration: @animation-duration-move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: @animation-delay-move*2;
+}
+.move_4 {
+
+  animation-name: move_animate;
+  animation-duration: @animation-duration-move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: @animation-delay-move*3;
+}
+.rotate {
+  -webkit-animation-name: cog;
+  -webkit-animation-duration: @animation-duration;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: cog;
+  -moz-animation-duration: @animation-duration;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: cog;
+  -ms-animation-duration: @animation-duration;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+
+  animation-name: cog;
+  animation-duration: @animation-duration;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.rotate_second {
+  -webkit-animation-name: cog;
+  -webkit-animation-duration: @animation-duration;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: cog;
+  -moz-animation-duration: @animation-duration;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: cog;
+  -ms-animation-duration: @animation-duration;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-delay: @animation-delay;
+  animation-name: cog;
+  animation-duration: @animation-duration;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.rotate_third {
+  -webkit-animation-name: cog;
+  -webkit-animation-duration: @animation-duration;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: cog;
+  -moz-animation-duration: @animation-duration;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: cog;
+  -ms-animation-duration: @animation-duration;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-delay: @animation-delay*2;
+  animation-name: cog;
+  animation-duration: @animation-duration;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.rotate_forth {
+  -webkit-animation-name: cog;
+  -webkit-animation-duration: @animation-duration;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: cog;
+  -moz-animation-duration: @animation-duration;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: cog;
+  -ms-animation-duration: @animation-duration;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-delay: @animation-delay*3;
+  animation-name: cog;
+  animation-duration: @animation-duration;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+//@-ms-keyframes cog {
+//  from { -ms-transform: rotate(0deg); }
+//  to { -ms-transform: rotate(360deg); }
+//  0%,50% {opacity: 1;}
+//  50%, 100% {opacity: 0;}
+//}
+//@-moz-keyframes cog {
+////  0%, 25% {
+////    from {
+////      -moz-transform: rotate(0deg);
+////    }
+////
+////    to {
+////      -moz-transform: rotate(360deg);
+////    }
+////  }
+////  75,100% {opacity: 1;}
+////  50%, 100% {opacity: 0;}
+////
+//}
+//@-webkit-keyframes cog {
+//  from { -webkit-transform: rotate(0deg); }
+//  to { -webkit-transform: rotate(360deg); }
+//  0%,50% {opacity: 1;}
+//  50%, 100% {opacity: 0;}
+//}
+@keyframes cog {
+
+  from {
+   transform:rotate(0deg);
+  }
+  0% {transform:rotate(0deg); opacity: 0;}
+  4% {transform:rotate(180deg);opacity: 1;}
+  25% {transform:rotate(180deg); opacity: 1;}
+  29% {transform:rotate(360deg);opacity: 0;}
+  to {
+    transform:rotate(360deg); opacity: 0;
+  }
+
+}
+@keyframes move_animate {
+
+  from {
+    transform:translateY(10vh);
+  }
+  0% {transform:translateY(10vh); opacity: 0;}
+  10% {transform:translateY(0vh);opacity: 1;}
+  90% {transform:translateY(0vh); opacity: 1;}
+  to {
+    transform:translateY(10vh); opacity: 0;
+  }
+
+}
+

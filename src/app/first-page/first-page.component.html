@@ -1,0 +1,76 @@
+<div class="first_page__main">
+  <div class="upper_part_menu_cont">
+    <div class="upper_part_menu" [style.font-size]="getFontSize_up_menu()">
+      <div class="menu_item"> Войти </div> <div class="menu_item_line">|</div>
+      <div class="menu_item"> Зарегестрироваться</div> <div class="menu_item_line">|</div>
+      <div class="menu_item"> Зарабатывать </div>
+      <div class="menu_item"> </div>
+    </div>
+  </div>
+    <div class="main__upper_part">
+
+      <div class="upper_part__photo" [style.height]="getPhotoSize()" [style.flex-basis]="getPhotoSize()"  >
+        <div class="photo__item zero" >
+          <img src="../../assets/image/face1.jpg" class="photo__item_img" >
+        </div>
+        <div class="photo__item one">
+          <img class="photo__item_img" src="../../assets/image/face2.jpg">
+        </div>
+        <div class="photo__item two">
+          <img class="photo__item_img" src="../../assets/image/face3.jpg">
+        </div>
+        <div class="photo__item three">
+          <img class="photo__item_img" src="../../assets/image/face4.jpg">
+        </div>
+      </div>
+      <div class="upper_part__phrases">
+        <div class="phrases__item anim_phrase_1">
+          Говори с носителями языка
+        </div>
+        <div class="phrases__item anim_phrase_2">
+          Снеми языковой барьер
+        </div>
+        <div class="phrases__item anim_phrase_3">
+          Перестань стесняться и начни говорить
+        </div>
+        <div class="phrases__item anim_phrase_4">
+          Удивись низкой цене
+        </div>
+      </div>
+    </div>
+
+  <div class="main__down_part">
+
+    <div id = "straight" class="down_part__straight"  (click)="pressButtonTiangle()">
+
+        <div class="down_part__round_button" >
+
+          <div [ngClass]="down_part__triangle">
+          </div>
+        </div>
+
+
+
+    </div>
+
+    <div id="block1" class="down_part__body">
+      <div *ngIf="flag" [style.font-size]="getFontSize_1()" class="body__sign" @animation-phrase>
+        <p>Как это работает ?</p>
+      </div>
+
+    </div>
+    <div id="block2" class="down_part__body">
+      <div *ngIf="flag" class="body__photo" >
+        <div class="body__photo_item" [style.height]="getPhotoSize()" [style.flex-basis]="getPhotoSize()" *ngFor="let item of photos" @animation-photo>
+          <img [src]="getImage(item)"  class="photo__item_img" >
+          <div>
+            sdfsdf
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="down_part__body"></div>
+  <div>
+  </div>
+  </div>
+</div>
